@@ -6,7 +6,7 @@ export type RedisClient = RedisClientType<any, any, any>;
 
 export const createApp = (client: RedisClient) => {
   const app = express();
-
+  console.log('test add');
   app.use(express.json());
 
   app.get("/", (request, response) => {
